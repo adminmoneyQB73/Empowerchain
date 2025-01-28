@@ -30,11 +30,13 @@ Your Node Name
 Port prefix
 
 174
-# Clone project repository
+**Clone project repository**
+```
 cd && rm -rf empowerchain
 git clone https://github.com/EmpowerPlastic/empowerchain
 cd empowerchain
 git checkout v2.0.0
+```
 
 # Build binary
 make install
