@@ -38,8 +38,10 @@ cd empowerchain
 git checkout v2.0.0
 ```
 
-# Build binary
+**Build binary**
+```
 make install
+```
 
 # Prepare cosmovisor directories
 mkdir -p $HOME/.empowerchain/cosmovisor/genesis/bin
