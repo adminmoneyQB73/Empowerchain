@@ -49,8 +49,10 @@ mkdir -p $HOME/.empowerchain/cosmovisor/genesis/bin
 ln -s $HOME/.empowerchain/cosmovisor/genesis $HOME/.empowerchain/cosmovisor/current -f
 ```
 
-# Copy binary to cosmovisor directory
+**Copy binary to cosmovisor directory**
+```
 cp $(which empowerd) $HOME/.empowerchain/cosmovisor/genesis/bin
+```
 
 # Set node CLI configuration
 empowerd config chain-id empowerchain-1
