@@ -54,10 +54,12 @@ ln -s $HOME/.empowerchain/cosmovisor/genesis $HOME/.empowerchain/cosmovisor/curr
 cp $(which empowerd) $HOME/.empowerchain/cosmovisor/genesis/bin
 ```
 
-# Set node CLI configuration
+**Set node CLI configuration**
+```
 empowerd config chain-id empowerchain-1
 empowerd config keyring-backend file
 empowerd config node tcp://localhost:17457
+```
 
 # Initialize the node
 empowerd init "Your Node Name" --chain-id empowerchain-1
