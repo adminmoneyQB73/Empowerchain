@@ -61,8 +61,10 @@ empowerd config keyring-backend file
 empowerd config node tcp://localhost:17457
 ```
 
-# Initialize the node
+**Initialize the node**
+```
 empowerd init "Your Node Name" --chain-id empowerchain-1
+```
 
 # Download genesis and addrbook files
 curl -L https://snapshots.nodejumper.io/empower/genesis.json > $HOME/.empowerchain/config/genesis.json
