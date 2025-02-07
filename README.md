@@ -77,9 +77,10 @@ curl -L https://snapshots.nodejumper.io/empower/addrbook.json > $HOME/.empowerch
 sed -i -e 's|^seeds *=.*|seeds = "f2ed98cf518b501b6d1c10c4a16d0dfbc4a9cc98@tenderseed.ccvalidators.com:27001,e16668ddd526f4e114ebb6c4714f0c18c0add8f8@empower-seed.zenscape.one:26656,6740fa259552a628266a85de8c2a3dee7702b8f9@empower-mainnet-seed.itrocket.net:14656,ebc272824924ea1a27ea3183dd0b9ba713494f83@empowerchain-mainnet-seed.autostake.com:27326,a1427b456513ab70967a2a5c618d347bc89e8848@seed.empowerchain.io:26656,9aa8a73ea9364aa3cf7806d4dd25b6aed88d8152@empowerchain.seed.mzonder.com:12156,8542cd7e6bf9d260fef543bc49e59be5a3fa9074@seed.publicnode.com:26656,b85358e035343a3b15e77e1102857dcdaf70053b@seeds.bluestake.net:21956,ebc272824924ea1a27ea3183dd0b9ba713494f83@empowerchain-mainnet-peer.autostake.com:27326,178718a993161cc20f9d0de2bbef9a3aec5c1d3d@rpc.empower.indonode.net:52656"|' $HOME/.empowerchain/config/config.toml
 ```
 
-# Set minimum gas price
+**Set minimum gas price**
+```
 sed -i -e 's|^minimum-gas-prices *=.*|minimum-gas-prices = "0.025umpwr"|' $HOME/.empowerchain/config/app.toml
-
+```
 # Set pruning
 sed -i \
   -e 's|^pruning *=.*|pruning = "custom"|' \
