@@ -81,12 +81,14 @@ sed -i -e 's|^seeds *=.*|seeds = "f2ed98cf518b501b6d1c10c4a16d0dfbc4a9cc98@tende
 ```
 sed -i -e 's|^minimum-gas-prices *=.*|minimum-gas-prices = "0.025umpwr"|' $HOME/.empowerchain/config/app.toml
 ```
-# Set pruning
+**Set pruning**
+```
 sed -i \
   -e 's|^pruning *=.*|pruning = "custom"|' \
   -e 's|^pruning-keep-recent *=.*|pruning-keep-recent = "100"|' \
   -e 's|^pruning-interval *=.*|pruning-interval = "17"|' \
   $HOME/.empowerchain/config/app.toml
+```
 
 # Enable prometheus
 sed -i -e 's|^prometheus *=.*|prometheus = true|' $HOME/.empowerchain/config/config.toml
