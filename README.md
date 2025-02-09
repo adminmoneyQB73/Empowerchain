@@ -1,13 +1,8 @@
-Hardware Requirements
-
-Minimum
-
-3CPU 4RAM 80GB
-Recommended
-
-4CPU 8RAM 160GB
-Rent On Hetzner | Rent On OVH
-Dependencies Installation
+**Hardware Requirements**
+```
+Minimum : 3CPU 4RAM 80GB
+Recommended : 4CPU 8RAM 160GB
+```
 
 **Install dependencies for building from source**
 ```
