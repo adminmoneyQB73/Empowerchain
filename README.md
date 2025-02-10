@@ -85,8 +85,10 @@ sed -i \
   $HOME/.empowerchain/config/app.toml
 ```
 
-# Enable prometheus
+**Enable prometheus**
+```
 sed -i -e 's|^prometheus *=.*|prometheus = true|' $HOME/.empowerchain/config/config.toml
+```
 
 # Change ports
 sed -i -e "s%:1317%:17417%; s%:8080%:17480%; s%:9090%:17490%; s%:9091%:17491%; s%:8545%:17445%; s%:8546%:17446%; s%:6065%:17465%" $HOME/.empowerchain/config/app.toml
