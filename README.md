@@ -96,8 +96,10 @@ sed -i -e "s%:1317%:17417%; s%:8080%:17480%; s%:9090%:17490%; s%:9091%:17491%; s
 sed -i -e "s%:26658%:17458%; s%:26657%:17457%; s%:6060%:17460%; s%:26656%:17456%; s%:26660%:17461%" $HOME/.empowerchain/config/config.toml
 ```
 
-# Download latest chain data snapshot
+**Download latest chain data snapshot**
+```
 curl "https://snapshots.nodejumper.io/empower/empower_latest.tar.lz4" | lz4 -dc - | tar -xf - -C "$HOME/.empowerchain"
+```
 
 # Install Cosmovisor
 go install cosmossdk.io/tools/cosmovisor/cmd/cosmovisor@v1.7.0
