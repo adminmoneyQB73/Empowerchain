@@ -101,8 +101,10 @@ sed -i -e "s%:26658%:17458%; s%:26657%:17457%; s%:6060%:17460%; s%:26656%:17456%
 curl "https://snapshots.nodejumper.io/empower/empower_latest.tar.lz4" | lz4 -dc - | tar -xf - -C "$HOME/.empowerchain"
 ```
 
-# Install Cosmovisor
+**Install Cosmovisor**
+```
 go install cosmossdk.io/tools/cosmovisor/cmd/cosmovisor@v1.7.0
+```
 
 # Create a service
 sudo tee /etc/systemd/system/empower.service > /dev/null << EOF
