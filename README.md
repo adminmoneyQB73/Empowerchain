@@ -17,14 +17,7 @@ curl -L https://go.dev/dl/go1.22.7.linux-amd64.tar.gz | sudo tar -xzf - -C /usr/
 echo 'export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin' >> $HOME/.profile
 source .profile
 ```
-Node Installation
 
-Node Name
-
-Your Node Name
-Port prefix
-
-174
 **Clone project repository**
 ```
 cd && rm -rf empowerchain
