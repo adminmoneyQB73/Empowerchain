@@ -210,3 +210,4 @@ Add feature overview
 Add system requirements
 Add installation instructions
 Add quick start guide
+Document query optimization process
