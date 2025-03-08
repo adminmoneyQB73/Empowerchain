@@ -212,3 +212,4 @@ Add installation instructions
 Add quick start guide
 Document query optimization process
 Add indexing examples
+Add caching configuration guide
