@@ -215,3 +215,4 @@ Add indexing examples
 Add caching configuration guide
 Add database tuning tips
 Add monitoring integration guide
+Add contributing guidelines
